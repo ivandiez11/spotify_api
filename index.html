@@ -1,0 +1,100 @@
+
+<!-- 
+
+URL DE LA TAREA: https://rubennrouge.tech/Spotify
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio Spotify API</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #form {
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #campo {
+      width: calc(100% - 22px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #333;
+      border-radius: 4px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .botones {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #1db954;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button#reset {
+      background-color: #d32f2f;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #resultado img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    #resultado audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <form id="form">
+    <input id="campo" type="text" placeholder="Introduce una canción...">
+    <div class="botones">
+      <button id="enviar" type="submit">Enviar</button>
+      <button id="reset" type="reset">Cancelar</button>
+    </div>
+  </form>
+  <div id="resultado"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
